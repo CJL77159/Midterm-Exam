@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e6;
+    color: #3b2a20;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3b2a20;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+    color: #59634a;
+    border-bottom: 2px solid #59634a;
+}
+
+.hero {
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    width: 45%;
+    position: relative;
+    z-index: 2;
+    padding-left: 20px;
+}
+
+.hero-text h1 {
+    font-size: 68px;
+    line-height: 0.95;
+    margin: 0 0 25px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.hero-text button {
+    padding: 15px 32px;
+    border: none;
+    background-color: #59634a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #3b2a20;
+}
+
+.hero-image {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    width: 48%;
+    height: 82%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-image img {
+    width: 68%;
+    max-width: 400px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    background-color: #59634a;
+    clip-path: shape(from 90.92% 40.31%, curve to 91.56% 60.00% with 91.59% 50.00%, smooth to 85.69% 78.71%, smooth to 69.21% 87.49%, smooth to 49.58% 89.38%, smooth to 30.99% 88.54%, smooth to 13.47% 78.64%, smooth to 8.60% 60.70%, smooth to 8.49% 39.25%, smooth to 13.90% 21.98%, smooth to 32.12% 14.71%, smooth to 50.28% 12.72%, smooth to 67.22% 14.67%, smooth to 82.94% 24.23%, smooth to 90.92% 40.31%);
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
